@@ -1,24 +1,25 @@
 # Proyecto REACT
 
--el proyecto debe cumplir con los siguientes requisitos:
--Web FULL RESPONSIVE
+__El proyecto debe cumplir con los siguientes requisitos:__
 
--Arquitectura útil y fácil de comprender
+* Web FULL RESPONSIVE
 
--Mínimo de 3 páginas accesibles usando react-router-dom
+* Arquitectura útil y fácil de comprender
 
--Mínimo de 3 estados (utilizados con sentido)
+* Mínimo de 3 páginas accesibles usando react-router-dom
 
--Mínimo de un useEffect para manejar peticiones de datos
+* Mínimo de 3 estados (utilizados con sentido)
 
--Se debe utilizar alguna API, ya sea pública o nuestra propia
+* Mínimo de un useEffect para manejar peticiones de datos
 
--Debe haber algún formulario con la intención que sea (siempre y cuando sea útil) se puede utilizar react-hook-form o controlar el formulario con useRef()
+* Se debe utilizar alguna API, ya sea pública o nuestra propia
 
--Componentes reutilizables
+* Debe haber algún formulario con la intención que sea (siempre y cuando sea útil) se puede utilizar react-hook-form o controlar el formulario con useRef()
 
--No debe haber re-renderizaciones innecesarias de componentes o páginas
+* Componentes reutilizables
 
--Uso mínimo de un custom hook
+* No debe haber re-renderizaciones innecesarias de componentes o páginas
 
--Uso mínimo de un useContext
+* Uso mínimo de un custom hook
+
+* Uso mínimo de un useContext
