@@ -6,7 +6,7 @@ import { useForm} from 'react-hook-form'
 
 
 export const Search = () => {
-const [character, setCharacter] = useState('');
+const [character, setCharacter] = useState([]);
 const {register, handleSubmit, formState: {errors}} = useForm();
 
 const onSearch = async (data) => {
@@ -36,21 +36,25 @@ try{
        onSubmit={handleSubmit(onSearch)}
       >
       <input {...register("name", {required: true})} placeholder='Type the name'/>
-      {errors.name && <span>This field is required</span>}
-      <input type='submit'/>
+      {errors.name && <p><span>This field is required</span></p>}
+      <input type='submit' className='btn'/>
 
       </form>
 
       {/* mirar porque no sale el personaje , sale todos, no uno*/}
-      {character && (
-        <div className='character-info'>
-          <img src={character.image} className='character-image' alt='character'/>
-          <h1>{character.title}</h1>
-          <h2>{character.fullName}</h2>
-          <h5>{character.family}</h5>
-
-        </div>
-      )}
-      </div>
+      
+      {character ===0 ?
+        errors.name && <p><span>There is no character with this name</span></p>
+        : character.map((c) =>(
+        <div className='character-info'
+           key = {c.id}
+        >       
+          <img src={c.imageUrl} className='character-image' alt='character'/>
+          <h1>{c.title}</h1>
+          <h2>{c.fullName}</h2>
+          <h5>{c.family}</h5>
+          </div>
+        ))}
+   </div>
   )
 }
