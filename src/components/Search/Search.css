@@ -1,12 +1,12 @@
-div{
-  position: relative; 
+
+.search{
+    background-color:  #BEB8AF;
+    position: relative; 
   width: 100%;
   display: block;
   overflow: hidden;
   border-radius: 10px;
 }
-
-
 span{
     color: red;
     padding: 6px;   
@@ -18,7 +18,10 @@ p{
 
 input{
     width: 80vw;
+    margin: 5px;
     padding: 6px;
+    justify-content: center;
+    align-items: center;
     border: 2px solid var(--color);
     background-color: #FCFEF0;
     border-radius: 20px;
@@ -28,7 +31,7 @@ input{
 
 
  .btn{
-    width: 15vw;
+    width: 10vw;
     padding: 6px;
     font-weight: 500;
 }
@@ -38,17 +41,32 @@ input{
     color: var(--color);
 }
 
-
-.character-info img{
-    padding: 10px;
-    position: relative;
+.character-container{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #BEB8AF;
     text-align: center;
-    width: 100px;   
-    height: 100px;
+    gap: 20px;
     
-    color: #333;
+}
+.character-info{
+    max-width: 350px;    
+    margin: 10px;
+    padding: 15px;
+    background-color: var(--color);
+    border-radius: 20px;
+    text-align: center;
+}
+.character-info img{
+   
+    width: 150px;
+    height: 150px;
+    margin: 10px;    
+    object-fit: cover;
+    border: 8px solid white;
     border-radius: 50%;
-    border: 5px solid  #FCFEF0;
 }
 h1{
     color: #423730;
@@ -63,6 +81,15 @@ h2{
 
 h5{
     font-style: italic;
+    font-size: 15px;
     color: #575047;
    
+}
+
+h3 span{
+    color: #f90000;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -9,9 +9,11 @@ const [error, setError] = useState(null);
 
 
 useEffect(()=>{
+  
   const onHome = async () => {
     
     setError(null);
+
     // realizamos la patición a la API
     // para conseguir todos los personajes de GOT  
   
