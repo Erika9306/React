@@ -41,8 +41,8 @@ try{
 
       </form>
 
-      {/* mirar porque no sale el personaje , sale todos, no uno*/}
-      
+      {/* filtrar personajes ya que salen todos*/}
+
       {character ===0 ?
         errors.name && <p><span>There is no character with this name</span></p>
         : character.map((c) =>(

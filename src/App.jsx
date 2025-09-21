@@ -3,7 +3,7 @@ import './App.css'
 import { NavBar } from './components/NavBar/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import { Search } from './components/Search/Search';
-import { Home } from './components/pages/Home';
+import { Home } from './components/Home/Home';
 import { Favourites } from './components/pages/Favourites';
 
 

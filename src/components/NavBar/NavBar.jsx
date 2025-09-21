@@ -16,16 +16,7 @@ export const NavBar = () => {
             </li>
             <li className='nav-list'>
             <NavLink to ='/favourites'>Favourites</NavLink>
-            </li>
-            {/* <li className='nav-list'>
-                <a href="/">Home</a>
-            </li>
-            <li className='nav-list'>
-                <a href="/search">Search</a>
-             </li>
-            <li className='nav-list'>
-                <a href="/favourites">Favourites</a>
-            </li> */}
+            </li>         
 
       </ul>
   

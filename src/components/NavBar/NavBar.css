@@ -27,12 +27,16 @@
 
 a{
     text-decoration: none;
+    color: var(--color);
+    font-size: 20px;
+    font-weight: 600;
 
 }
 a:hover{
-    padding: 2px;
-    background-color: rgb(255, 235, 16);
-    color: rgb(0, 0, 0);
-    border-radius: 20%;
+    padding: 5px;
+    margin: 3px;
+    background-color: var(--color);
+    color: var(--background-color);
+    border-radius: 25%;
     transition: 0.10s ease-in-out;
 }
