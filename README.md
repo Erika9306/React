@@ -23,3 +23,8 @@ __El proyecto debe cumplir con los siguientes requisitos:__
 * Uso mínimo de un custom hook
 
 * Uso mínimo de un useContext
+
+__Recursos usados:__
+* Visual Studio Code
+
+* Canva

@@ -4,7 +4,7 @@ import { NavBar } from './components/NavBar/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import { Search } from './components/Search/Search';
 import { Home } from './components/Home/Home';
-import { Favourites } from './components/pages/Favourites';
+import { AllCharacters } from './components/AllCharacters/AllCharacters';
 
 
 
@@ -19,7 +19,7 @@ import { Favourites } from './components/pages/Favourites';
       <Routes>   
     <Route path='/' element={<Home/>} />
    <Route path='/search' element={<Search/>}/>
-     <Route path='/favourites' element={<Favourites/>}/>
+     <Route path='/all' element={<AllCharacters/>}/>
      </Routes>
 
     </>
